@@ -17,12 +17,12 @@ In your web page:
 <script src="jquery.js"></script>
 <!-- if Foundation 3 -->
 <script src="foundation/jquery.foundation.reveal.js"></script>
-<!-- Foundation 3 end -->
+<!-- endif -->
 <!-- if Foundation 4 -->
 <script src="foundation/foundation.js"></script>
 <script src="foundation/foundation.reveal.js"></script>
-<!-- Foundation 4 end -->
-<script src="dist/foundationrevealabstraction.min.js"></script>
+<!-- endif -->
+<script src="dist/jquery.foundationrevealabstraction.min.js"></script>
 <div id="modal1" class="reveal-modal">
     <p>Modal 1.</p>
     <a class="close-reveal-modal">&#215;</a>
