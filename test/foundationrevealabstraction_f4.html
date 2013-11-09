@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Foundation Reveal Modal Abstraction jQuery plugin Test Suite - Foundation 4</title>
+  <link rel="stylesheet" href="foundation4.css">
+  <!-- Load local jQuery. -->
+  <script src="../bower_components/jquery/jquery.js"></script>
+  <!-- Load local Foundation 4 reveal library. -->
+  <script src="../bower_components/foundation-4/js/foundation/foundation.js"></script>
+  <script src="../bower_components/foundation-4/js/foundation/foundation.reveal.js"></script>
+  <!-- Load local QUnit. -->
+  <link rel="stylesheet" href="../bower_components/qunit/qunit/qunit.css" media="screen">
+  <script src="../bower_components/qunit/qunit/qunit.js"></script>
+  <!-- Load local lib and tests. -->
+  <script src="../src/jquery.foundationrevealabstraction.js"></script>
+  <script src="foundationrevealabstraction_test.js"></script>
+  <!-- Removing access to jQuery and $. But it'll still be available as _$, if
+       you REALLY want to mess around with jQuery in the console. REMEMBER WE
+       ARE TESTING A PLUGIN HERE, THIS HELPS ENSURE BEST PRACTICES. REALLY. -->
+  <script>window._$ = jQuery.noConflict(true);</script>
+</head>
+<body>
+  <div id="qunit"></div>
+  <div id="qunit-fixture">
+      <div id="m1" class="reveal-modal">
+          <h2>Modal 1.</h2>
+          <a class="close-reveal-modal">&#215;</a>
+      </div>
+
+      <div class="row">
+          <p><a href="#" data-reveal-id="m1" class="button">Open Modal 1 using Foundation's data-reveal-id</a></p>
+      </div>
+  </div>
+  <!-- Must initialize Foundation 4 -->
+  <script>
+      _$(document).foundation();
+  </script>
+</body>
+</html>

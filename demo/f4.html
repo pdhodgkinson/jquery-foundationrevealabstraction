@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Foundation 4 Reveal Test</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/foundation4.css">
+</head>
+<body>
+<div id="m1" class="reveal-modal">
+    <h2>Modal 1.</h2>
+    <a class="close-reveal-modal">&#215;</a>
+</div>
+<div id="m2" class="reveal-modal">
+    <h2>Modal 2.</h2>
+    <a class="close-reveal-modal">&#215;</a>
+</div>
+
+<div class="row">
+    <h2>Test Fuel Reveal Modal using Foundation's automatic modal opening using data-reveal-id</h2>
+</div>
+<div class="row">
+    <p><a href="#" data-reveal-id="m1" class="button">Open Modal 1 using Foundation's data-reveal-id</a></p>
+
+    <p><a href="#" data-reveal-id="m2" class="button">Open Modal 2 using Foundation's data-reveal-id</a></p>
+</div>
+<div class="row">
+    <h2>Test Fuel Reveal Modal by manually attaching JQuery click event handler, and opening modals
+        programmatically</h2>
+</div>
+<div class="row">
+    <p><a href="#" data-fuel-reveal-id="m1" data-fuel-reveal-method="open" class="button">Open Modal 1
+        programmatically</a></p>
+
+    <p><a href="#" data-fuel-reveal-id="m1" data-fuel-reveal-method="close" class="button">Close Modal 1
+        programmatically</a></p>
+
+    <p><a href="#" data-fuel-reveal-id="m2" data-fuel-reveal-method="open" class="button">Open Modal 2
+        programmatically</a></p>
+
+    <p><a href="#" data-fuel-reveal-id="m2" data-fuel-reveal-method="close" class="button">Close Modal 2
+        programmatically</a></p>
+</div>
+
+<script src="../bower_components/jquery/jquery.js"></script>
+<script src="../bower_components/foundation-4/js/foundation/foundation.js"></script>
+<script src="../bower_components/foundation-4/js/foundation/foundation.reveal.js"></script>
+<script src="../src/jquery.foundationrevealabstraction.js"></script>
+<script src="js/main.js"></script>
+<script>
+    $(document).foundation();
+</script>
+</body>
+</html>
