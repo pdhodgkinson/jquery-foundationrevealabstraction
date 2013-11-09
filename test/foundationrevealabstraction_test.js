@@ -38,7 +38,7 @@
     setTimeout(function() {
       ok(m1.hasClass('open'), 'is open');
       start();
-    }, 300);
+    }, 500);
   });
 
   /**
